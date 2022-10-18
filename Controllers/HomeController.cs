@@ -6,16 +6,21 @@ using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 using University.Models;
+using Microsoft.EntityFrameworkCore;
+using University.Data;
+using University.Models.SchoolViewModels;
 
 namespace University.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly SchoolContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, SchoolContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
