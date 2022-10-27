@@ -9,6 +9,7 @@ namespace University.Models
     {
         [Key]
         public int Id { get; set; }
+
         [Required]
         [StringLength(50)]
         [Display(Name = "Last Name")]
@@ -16,7 +17,7 @@ namespace University.Models
 
         [Required]
         [StringLength(50)]
-        [Column("FirstMidName")]
+        [Column("FirstName")]
         [Display(Name = "First Name")]
         public string FirstName { get; set; }
 
@@ -25,7 +26,7 @@ namespace University.Models
         {
             get
             {
-                return LastName + ", " + FirstMidName;
+                return LastName + ", " + FirstName;
             }
         }
 
