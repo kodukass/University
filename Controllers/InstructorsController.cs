@@ -41,7 +41,7 @@ namespace University.Controllers
 			{
 				ViewData["InstructorId"] = id.Value;
 				Instructor instructor = vm.Instructors
-					.Where(i => i.Id == id.Value)
+					.Where(i => i.InstructorId == id.Value)
 					.Single();
 				vm.Courses = instructor.CourseAssignments
 					.Select(i => i.Course);
