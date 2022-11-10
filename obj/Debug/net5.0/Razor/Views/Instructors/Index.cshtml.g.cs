@@ -29,7 +29,7 @@ using University.Models;
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"d04174493f2ed75555289ce3a63b931a4a14623b", @"/Views/Instructors/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"e04dcc244e1469154104359d31508023c653ccb7", @"/Views/_ViewImports.cshtml")]
     #nullable restore
-    public class Views_Instructors_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<University.Models.InstructorsIndexData>
+    public class Views_Instructors_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<University.Models.SchoolViewsModels.InstructorsIndexData>
     #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("asp-controller", "Courses", global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -376,7 +376,7 @@ WriteAttributeValue("", 651, selectedRow, 651, 12, false);
         #nullable disable
         #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<University.Models.InstructorsIndexData> Html { get; private set; } = default!;
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<University.Models.SchoolViewsModels.InstructorsIndexData> Html { get; private set; } = default!;
         #nullable disable
     }
 }
