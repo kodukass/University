@@ -8,7 +8,7 @@ namespace University.Models
     {
         [DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Display(Name = "Number")]
-        public int CourseId { get; set; }
+        public int CourseID { get; set; }
 
         [StringLength(50, MinimumLength = 3)]
         public string Title { get; set; }

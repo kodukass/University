@@ -36,7 +36,7 @@ namespace University.Controllers
             var courses = await _context.Courses
                 .Include(_c => _c.Department)
                 .AsNoTracking()
-                .FirstOrDefaultAsync(m => m.CourseId == id);
+                .FirstOrDefaultAsync(m => m.CourseID == id);
 
             if (courses == null)
             {
@@ -75,7 +75,7 @@ namespace University.Controllers
             }
             var course = await _context.Courses
                 .AsNoTracking()
-                .FirstOrDefaultAsync(m => m.CourseId == id);
+                .FirstOrDefaultAsync(m => m.CourseID == id);
 
             if (course == null)
             {
@@ -95,7 +95,7 @@ namespace University.Controllers
                 return NotFound();
             }
             var courseToUpdate = await _context.Courses
-                .FirstOrDefaultAsync(c => c.CourseId == id);
+                .FirstOrDefaultAsync(c => c.CourseID == id);
 
             if (await TryUpdateModelAsync<Course>(courseToUpdate, 
                 "",
@@ -126,7 +126,7 @@ namespace University.Controllers
             var course = await _context.Courses
                 .Include(c => c.Department)
                 .AsNoTracking()
-                .FirstOrDefaultAsync(m => m.CourseId == id);
+                .FirstOrDefaultAsync(m => m.CourseID == id);
 
             if (course == null)
             {

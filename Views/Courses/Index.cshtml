@@ -14,7 +14,7 @@
 		<thead>
 			<tr>
 				<th>
-					@Html.DisplayNameFor(model => model.CourseId)
+					@Html.DisplayNameFor(model => model.CourseID)
 				</th>
 				<th>
 					@Html.DisplayNameFor(model => model.Title)
@@ -33,7 +33,7 @@
 			{
 				<tr>
 					<td>
-						@Html.DisplayFor(modelItem => item.CourseId)
+					@Html.DisplayFor(modelItem => item.CourseID)
 					</td>
 					<td>
 						@Html.DisplayFor(modelItem => item.Title)
@@ -45,9 +45,9 @@
 						@Html.DisplayFor(modelItem => item.Department.Name)
 					</td>
 					<td>
-						<a asp-action="Edit" asp-route-courseid="@item.CourseId">Edit</a> |
-						<a asp-action="Details" asp-route-courseid="@item.CourseId">Details</a> |
-						<a asp-action="Delete" asp-route-courseid="@item.CourseId">Delete</a> |
+					<a asp-action="Edit" asp-route-courseid="@item.CourseID">Edit</a> |
+					<a asp-action="Details" asp-route-courseid="@item.CourseID">Details</a> |
+					<a asp-action="Delete" asp-route-courseid="@item.CourseID">Delete</a> |
 					</td>
 				</tr>
 			}

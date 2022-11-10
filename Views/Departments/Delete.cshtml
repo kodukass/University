@@ -39,12 +39,12 @@
     </dl>
 
     <form asp-action="Delete">
-        <input type="hidden" asp-for="Id" />
+        <input type="hidden" asp-for="DepartmentId" />
         <input type="hidden" asp-for="RowVersion" />
         <div class="form-action = no-color"></div>
     </form>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Edit" asp-route-id="@Model.DepartmentId">Edit</a> |
     <a asp-action="Index">Back to List</a>
 </div>

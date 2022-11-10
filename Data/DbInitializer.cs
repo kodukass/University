@@ -90,26 +90,26 @@ namespace University.Data
 
             var courses = new Course[]
             {
-                new Course {CourseId = 1050, Title = "Chemistry",      Credits = 3,
-                    DepartmentId = departments.Single( s => s.Name == "Engineering").Id
+                new Course {CourseID = 1050, Title = "Chemistry",      Credits = 3,
+                    DepartmentId = departments.Single( s => s.Name == "Engineering").DepartmentId
                 },
-                new Course {CourseId = 4022, Title = "Microeconomics", Credits = 3,
-                    DepartmentId = departments.Single( s => s.Name == "Economics").Id
+                new Course {CourseID = 4022, Title = "Microeconomics", Credits = 3,
+                    DepartmentId = departments.Single( s => s.Name == "Economics").DepartmentId
                 },
-                new Course {CourseId = 4041, Title = "Macroeconomics", Credits = 3,
-                    DepartmentId = departments.Single( s => s.Name == "Economics").Id
+                new Course {CourseID = 4041, Title = "Macroeconomics", Credits = 3,
+                    DepartmentId = departments.Single( s => s.Name == "Economics").DepartmentId
                 },
-                new Course {CourseId = 1045, Title = "Calculus",       Credits = 4,
-                    DepartmentId = departments.Single( s => s.Name == "Mathematics").Id
+                new Course {CourseID = 1045, Title = "Calculus",       Credits = 4,
+                    DepartmentId = departments.Single( s => s.Name == "Mathematics").DepartmentId
                 },
-                new Course {CourseId = 3141, Title = "Trigonometry",   Credits = 4,
-                    DepartmentId = departments.Single( s => s.Name == "Mathematics").Id
+                new Course {CourseID = 3141, Title = "Trigonometry",   Credits = 4,
+                    DepartmentId = departments.Single( s => s.Name == "Mathematics").DepartmentId
                 },
-                new Course {CourseId = 2021, Title = "Composition",    Credits = 3,
-                    DepartmentId = departments.Single( s => s.Name == "English").Id
+                new Course {CourseID = 2021, Title = "Composition",    Credits = 3,
+                    DepartmentId = departments.Single( s => s.Name == "English").DepartmentId
                 },
-                new Course {CourseId = 2042, Title = "Literature",     Credits = 4,
-                    DepartmentId = departments.Single( s => s.Name == "English").Id
+                new Course {CourseID = 2042, Title = "Literature",     Credits = 4,
+                    DepartmentId = departments.Single( s => s.Name == "English").DepartmentId
                 },
             };
 
@@ -141,35 +141,35 @@ namespace University.Data
             var courseInstructors = new CourseAssignment[]
             {
                 new CourseAssignment {
-                    CourseId = courses.Single(c => c.Title == "Chemistry" ).CourseId,
+                    CourseId = courses.Single(c => c.Title == "Chemistry" ).CourseID,
                     InstructorId = instructors.Single(i => i.LastName == "Kapoor").InstructorId
                     },
                 new CourseAssignment {
-                    CourseId = courses.Single(c => c.Title == "Chemistry" ).CourseId,
+                    CourseId = courses.Single(c => c.Title == "Chemistry" ).CourseID,
                     InstructorId = instructors.Single(i => i.LastName == "Harui").InstructorId
                     },
                 new CourseAssignment {
-                    CourseId = courses.Single(c => c.Title == "Microeconomics" ).CourseId,
+                    CourseId = courses.Single(c => c.Title == "Microeconomics" ).CourseID,
                     InstructorId = instructors.Single(i => i.LastName == "Zheng").InstructorId
                     },
                 new CourseAssignment {
-                    CourseId = courses.Single(c => c.Title == "Macroeconomics" ).CourseId,
+                    CourseId = courses.Single(c => c.Title == "Macroeconomics" ).CourseID,
                     InstructorId = instructors.Single(i => i.LastName == "Zheng").InstructorId
                     },
                 new CourseAssignment {
-                    CourseId = courses.Single(c => c.Title == "Calculus" ).CourseId,
+                    CourseId = courses.Single(c => c.Title == "Calculus" ).CourseID,
                     InstructorId = instructors.Single(i => i.LastName == "Fakhouri").InstructorId
                     },
                 new CourseAssignment {
-                    CourseId = courses.Single(c => c.Title == "Trigonometry" ).CourseId,
+                    CourseId = courses.Single(c => c.Title == "Trigonometry" ).CourseID,
                     InstructorId = instructors.Single(i => i.LastName == "Harui").InstructorId
                     },
                 new CourseAssignment {
-                    CourseId = courses.Single(c => c.Title == "Composition" ).CourseId,
+                    CourseId = courses.Single(c => c.Title == "Composition" ).CourseID,
                     InstructorId = instructors.Single(i => i.LastName == "Abercrombie").InstructorId
                     },
                 new CourseAssignment {
-                    CourseId = courses.Single(c => c.Title == "Literature" ).CourseId,
+                    CourseId = courses.Single(c => c.Title == "Literature" ).CourseID,
                     InstructorId = instructors.Single(i => i.LastName == "Abercrombie").InstructorId
                     },
             };
@@ -184,56 +184,56 @@ namespace University.Data
             {
                 new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Alexander").Id,
-                    CourseID = courses.Single(c => c.Title == "Chemistry" ).CourseId,
+                    CourseID = courses.Single(c => c.Title == "Chemistry" ).CourseID,
                     Grade = Grade.A
                 },
                     new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Alexander").Id,
-                    CourseID = courses.Single(c => c.Title == "Microeconomics" ).CourseId,
+                    CourseID = courses.Single(c => c.Title == "Microeconomics" ).CourseID,
                     Grade = Grade.C
                     },
                     new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Alexander").Id,
-                    CourseID = courses.Single(c => c.Title == "Macroeconomics" ).CourseId,
+                    CourseID = courses.Single(c => c.Title == "Macroeconomics" ).CourseID,
                     Grade = Grade.B
                     },
                     new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Alonso").Id,
-                    CourseID = courses.Single(c => c.Title == "Calculus" ).CourseId,
+                    CourseID = courses.Single(c => c.Title == "Calculus" ).CourseID,
                     Grade = Grade.B
                     },
                     new Enrollment {
                         StudentID = students.Single(s => s.LastName == "Alonso").Id,
-                    CourseID = courses.Single(c => c.Title == "Trigonometry" ).CourseId,
+                    CourseID = courses.Single(c => c.Title == "Trigonometry" ).CourseID,
                     Grade = Grade.B
                     },
                     new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Alonso").Id,
-                    CourseID = courses.Single(c => c.Title == "Composition" ).CourseId,
+                    CourseID = courses.Single(c => c.Title == "Composition" ).CourseID,
                     Grade = Grade.B
                     },
                     new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Anand").Id,
-                    CourseID = courses.Single(c => c.Title == "Chemistry" ).CourseId
+                    CourseID = courses.Single(c => c.Title == "Chemistry" ).CourseID
                     },
                     new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Anand").Id,
-                    CourseID = courses.Single(c => c.Title == "Microeconomics").CourseId,
+                    CourseID = courses.Single(c => c.Title == "Microeconomics").CourseID,
                     Grade = Grade.B
                     },
                 new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Barzdukas").Id,
-                    CourseID = courses.Single(c => c.Title == "Chemistry").CourseId,
+                    CourseID = courses.Single(c => c.Title == "Chemistry").CourseID,
                     Grade = Grade.B
                     },
                     new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Li").Id,
-                    CourseID = courses.Single(c => c.Title == "Composition").CourseId,
+                    CourseID = courses.Single(c => c.Title == "Composition").CourseID,
                     Grade = Grade.B
                     },
                     new Enrollment {
                     StudentID = students.Single(s => s.LastName == "Justice").Id,
-                    CourseID = courses.Single(c => c.Title == "Literature").CourseId,
+                    CourseID = courses.Single(c => c.Title == "Literature").CourseID,
                     Grade = Grade.B
                     }
             };
@@ -243,7 +243,7 @@ namespace University.Data
                 var enrollmentInDataBase = context.Enrollments.Where(
                     s =>
                             s.Student.Id == e.StudentID &&
-                            s.Course.CourseId == e.CourseID).SingleOrDefault();
+                            s.Course.CourseID == e.CourseID).SingleOrDefault();
                 if (enrollmentInDataBase == null)
                 {
                     context.Enrollments.Add(e);

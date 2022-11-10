@@ -22,7 +22,7 @@ namespace University.Controllers
 
 		public async Task<IActionResult> Index(int? id, int? courseId)
 		{
-			var vm = new InstructorsIndexData();
+			var vm = new InstructorIndexData();
 
 			vm.Instructors = await _context.Instructors
 				.Include(i => i.OfficeAssignment)
@@ -51,7 +51,7 @@ namespace University.Controllers
 			{
 				ViewData["CourseId"] = courseId.Value;
 				vm.Enrollments = vm.Courses
-					.Where(x => x.CourseId == courseId)
+					.Where(x => x.CourseID == courseId)
 					.Single()
 					.Enrollments;
 			}
