@@ -152,3 +152,5 @@ C:\Users\koduk\OneDrive\Dokumendid\GitHub\University\obj\Debug\net5.0\Razor\View
 C:\Users\koduk\OneDrive\Dokumendid\GitHub\University\obj\Debug\net5.0\Razor\Views\Departments\Details.cshtml.g.cs
 C:\Users\koduk\OneDrive\Dokumendid\GitHub\University\obj\Debug\net5.0\Razor\Views\Courses\Create.cshtml.g.cs
 C:\Users\koduk\OneDrive\Dokumendid\GitHub\University\obj\Debug\net5.0\Razor\Views\Courses\Details.cshtml.g.cs
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\University\obj\Debug\net5.0\Razor\Views\Courses\Delete.cshtml.g.cs
+C:\Users\koduk\OneDrive\Dokumendid\GitHub\University\obj\Debug\net5.0\Razor\Views\Courses\Edit.cshtml.g.cs
