@@ -150,7 +150,7 @@ namespace University.Controllers
             var depQuery = from d in _context.Departments
                            orderby d.Name
                            select d;
-            ViewBag.Id = new SelectList(depQuery.AsNoTracking(), "Id", "Name", selectedDepartment);
+            ViewBag.Id = new SelectList(depQuery.AsNoTracking(), "DepartmentId", "Name", selectedDepartment);
         }
     }
 }
