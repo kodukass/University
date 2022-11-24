@@ -173,9 +173,12 @@ namespace University.Controllers
 					}
 					return RedirectToAction(nameof(Index));
 				}
+				UpdateInstructorCourses(selectedCourses, instructorToUpdate);
+				PopulateAssignedCourseData(instructorToUpdate);
+				//lõpp kirjutamatta
+				return View(instructorToUpdate);
 			}
-			UpdateInstructorCourses(selectedCourses)
-			return View();
+			
 		}
 			
 		private void PopulateAssignedCourseData(Instructor instructor)
